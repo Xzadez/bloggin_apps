@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  var iconColor = Colors.black.obs;
+  var selectedIndex = 0.obs;
+
+  var iconColor = Colors.grey.obs;
 
   void changeColor() {
-    if (iconColor.value == Colors.black) {
-      iconColor.value = Colors.red;
-    } else {
-      iconColor.value = Colors.black;
-    }
+    iconColor.value =
+        iconColor.value == Colors.grey ? Colors.purple : Colors.grey;
+  }
+
+  void changePage(int index) {
+    selectedIndex.value = index;
   }
 }
