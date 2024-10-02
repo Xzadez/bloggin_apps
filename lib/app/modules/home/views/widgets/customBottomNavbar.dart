@@ -22,14 +22,18 @@ class CustomBottomNavBar extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: 'Search',
+            label: 'Explore',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.article_outlined),
+            label: 'Articles',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outlined),
             label: 'Profile',
           ),
         ],
-        selectedItemColor: Color(0xff6E53F1), 
+        selectedItemColor: Color(0xff6E53F1),
         unselectedItemColor: Colors.grey,
       );
     });

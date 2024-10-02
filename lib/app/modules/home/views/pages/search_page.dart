@@ -2,10 +2,10 @@ import 'package:bloggin_apps/app/modules/home/views/widgets/customCard.dart';
 import 'package:bloggin_apps/app/modules/home/views/widgets/customSearchBar.dart';
 import 'package:flutter/material.dart';
 
-class SearchPage extends StatelessWidget {
+class ExplorePage extends StatelessWidget {
   final VoidCallback onTap;
 
-  const SearchPage({super.key, required this.onTap});
+  const ExplorePage({super.key, required this.onTap});
   @override
   Widget build(BuildContext context) {
     final sizeDevice = MediaQuery.of(context).size;

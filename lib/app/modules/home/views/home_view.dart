@@ -17,7 +17,7 @@ class HomeView extends GetView<HomeController> {
 
   final List<Widget> pages = [
     HomePage(),
-    SearchPage(
+    ExplorePage(
       onTap: () {
         Get.to(DetailBlogView());
       },
