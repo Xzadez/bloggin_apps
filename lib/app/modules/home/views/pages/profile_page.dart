@@ -20,15 +20,12 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 20),
-            // Profile Picture
+
             const CircleAvatar(
               radius: 50,
-              backgroundImage: NetworkImage(
-                  'https://via.placeholder.com/150'), // Replace with real image
             ),
             const SizedBox(height: 10),
 
-            // Username and Edit Profile Button
             const Text(
               "Kelompok 10",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -84,20 +81,16 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 30),
 
-            // Posts List
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Tabs for "Posts", "Liked", "Saved"
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {
-                          // Handle posts tab
-                        },
+                        onPressed: () {},
                         child: const Text(
                           "Posts",
                           style: TextStyle(
@@ -125,9 +118,7 @@ class ProfilePage extends StatelessWidget {
                       ),
                       const SizedBox(width: 10),
                       OutlinedButton(
-                        onPressed: () {
-                          // Handle saved tab
-                        },
+                        onPressed: () {},
                         child: const Text("Saved"),
                         style: OutlinedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -138,19 +129,15 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20),
-
-                  // Posts Feed
                   ListView.builder(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
-                    itemCount: 3, // Number of posts
+                    itemCount: 3,
                     itemBuilder: (context, index) {
                       return Card(
                         elevation: 5,
                         margin: const EdgeInsets.only(bottom: 16),
                         child: ListTile(
-                          leading: Image.network(
-                              'https://via.placeholder.com/50'), // Post thumbnail
                           title: const Text(
                               'What It\'s Like To Stop Using Google Search'),
                           subtitle: const Row(
